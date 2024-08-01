@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Manash Dutta" />
+    <title>Stock Market Analysis</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <h1>Stock Market Analysis</h1>
+    </header>
+    <main class="container">
+      <section class="chart-container" id="chart-container">
+        <div class="chart-diagram" id="chart-diagram">
+          <canvas class="chart" id="chart"></canvas>
+        </div>
+        <div class="timeframe-buttons">
+          <button id="btn-1month">1 Month</button>
+          <button id="btn-3months">3 Months</button>
+          <button id="btn-1year">1 Year</button>
+          <button id="btn-5years">5 Years</button>
+        </div>
+      </section>
+      <section class="stock-summary">
+        <div id="summary">
+          <div class="stock-details" id="stock-details">
+            <span id="stock-symbol"></span>
+            <span id="stock-profit"></span>
+            <span id="stock-value"></span>
+          </div>
+          <p class="summary-text" id="summary-text"></p>
+        </div>
+      </section>
+      <section class="stock-list" id="stock-list">
+        <!-- <div class="stock-item">
+          <button class="stock-symbol">AAPL</button>
+          <span class="stock-profit">0.0022%</span>
+          <span class="stock-value">$18.22</span>
+        </div> -->
+      </section>
+    </main>
+    <!-- Script tag to link JavaScript -->
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
